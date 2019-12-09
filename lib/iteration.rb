@@ -44,7 +44,7 @@ def total_even_pairs(src)
   
   while count < src.count do 
     inner_array = src[count]
-    if (inner_array[0] + inner_array[1]) % 2 == 0 
+    if inner_array[0] % 2 == 0 && inner_array[1] % 2 == 0 
       total += (inner_array[0] + inner_array[1])
     end 
     count += 1 
